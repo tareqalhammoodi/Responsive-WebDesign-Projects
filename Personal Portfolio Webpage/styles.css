@@ -1,0 +1,913 @@
+  /*===== GOOGLE FONTS =====*/
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;700;900&display=swap');
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  html {
+  scroll-behavior: smooth;
+  }
+
+  body {
+    background: #141414;
+  }
+
+  /*========== Scroll top ==========*/
+  .to-top {
+    background: #FFFFFF;
+    position: fixed;
+    bottom: 16px;
+    right:30px;
+    width:25px;
+    height:25px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #000000;
+    text-decoration: none;
+    opacity:0;
+    pointer-events: none;
+    transition: all .4s;
+    margin-bottom: 20px;
+  }
+
+  .link1, .link2, .link3 {
+    position: fixed;
+    left:30px;
+    width:20px;
+    height:20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #000000;
+    margin-bottom: 50px;
+  }
+
+  .link1 {
+    bottom: 40px;
+  }
+
+  .link2 {
+    bottom: 70px;
+  }
+
+  .link3 {
+    bottom: 100px;
+  }
+
+  .vl {
+    border-left: 1px solid white;
+    height: 90px;
+    bottom: -20px;
+    position: fixed;
+    left:38px;
+  }
+
+  .icon {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .to-top.active {
+    bottom: 50px;
+    pointer-events: auto;
+    scroll-behavior: smooth;
+    opacity: 1;
+  }
+
+  /*========== NAV ==========*/
+  .NAV-Container {
+    background-color: #141414;
+    box-shadow: 2px 2px 5px 1px rgb(0,0,0,0.2);
+    min-height: 55px;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+  }
+
+  nav {
+    display: flex;
+    padding: 2% 0%;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 150px;
+    margin-right: 150px;
+  }
+
+  .NAV-List {
+    flex: 1;
+    text-align: left;
+    margin-left: -10px;
+  }
+
+  .NAV-List ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 14px;
+    position: relative;
+    font-weight: bold;
+  }
+
+  .NAV-List ul li ::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    display: block;
+    margin: 0%;
+    transition: 0.5s;
+  }
+
+  .NAV-List ul li :hover::after {
+    width: 100%;
+  }
+
+  .nav__button {
+    color: #bbbbbb;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 100;
+  }
+
+  .nav__button:hover {
+    transition: 0.5s;
+    color: #FFFFFF;
+  }
+
+  .active__button {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 15px;
+  }
+
+  /*=========================================================================================================================*/
+  /*========== Links CSS CODE ==========*/
+  .general__Container {
+    width: 100%;
+    height: 775px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    display: block;
+    text-align: center;
+  }
+
+  .general__img {
+    width: 175px;
+    height: 175px;
+    margin-bottom: 5px;
+  }
+
+  .name {
+    color: #FFFFFF;
+    font-size: 24px;
+  }
+
+  .bio {
+    color: #969696;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+
+  .button {
+    font-size: 14px;
+    font-weight: bold;
+    display: inline-flex;
+    background-color: #1D1D1D;
+    color: #FFFFFF;
+    padding: 2px 40px;
+    border-radius: 80px;
+    transition: 1.0s;
+    text-decoration: none; 
+    width: 50%;
+    height: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 10px;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .button:hover {
+    border: 2px solid #313131;
+    background-color: #414141;
+  }
+
+  .button__icon, .button__text {
+    display: inline-flex;
+    align-items: center;
+    height: 100%;
+  }
+
+  .button__text {
+    width: 400px;
+    height: 50px;
+    color: #FFFFFF;
+    text-decoration: none;
+    justify-content: center;
+    margin: 0 auto;
+    padding-right: 50px;
+  }
+
+  .button__icon {
+    width: 30px;
+    height: 30px;
+    float: left;
+    padding: 10px;
+  }
+
+  .music__Container {
+    height: 400px;
+    width: 100%;
+    text-align: center;
+    margin-top: 60px;
+  }
+
+  .text {
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .img__holder {
+    margin-top: 40px;
+    margin-bottom: 0px;
+    height: 125px;
+  }
+
+  .music__img {
+    height: 100px;
+    width: 100px;
+  }
+
+  .button__Container {
+    margin-top: 25px;
+  }
+
+  /*========== FOTTER ==========*/
+  .fotter__Container {
+    height: 50px;
+    text-align: center;
+    display: flex;
+    background-color: #1D1D1D;
+    margin-top: 20px;
+  }
+
+  .copyright {
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    height: 20px;
+    width: 100%;
+    margin: auto;
+  }
+
+/*=========================================================================================================================*/
+/*========== ABOUT-ME CSS CODE ==========*/
+.about__Container {
+  width: auto;
+  height: 450px;
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 120px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(2,1fr);
+  align-items: center;
+  align-content: center;  
+  text-align: left;
+}
+
+.Title {
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+.Subtitle {
+  font-size: 20px;
+  font-weight: 100;
+  color: #ababab;
+}
+
+.line {
+  font-size: 20px;
+  font-weight: 100;
+  color: #FFFFFF;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.about__img {
+  width: 500px;
+  justify-self: right;
+}
+
+.skills__Container {
+  margin-top: 10px;
+  display: block;
+  height: 140px;
+  width: auto;
+  margin-left: 150px;
+  margin-right: 150px;
+  gap: 75px;
+  text-align: center;
+  justify-content: center;
+}
+
+.text__co {
+  margin-top: 125px;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.tags {
+  color: #FFFFFF;
+  display: inline-block;
+  width: 60%;
+}
+
+.tag1, .tag2, .tag3, .tag4, .tag5,
+.tag6, .tag7, .tag8, .tag9, .tag10,
+.tag11, .tag12 {
+  font-size: 14px;
+  font-weight: bold;
+  border: 2px solid #FFFFFF;
+  border-radius: 15px;
+  padding: 5px;
+  align-self: center;
+  text-align: center;
+  margin: 5px;
+  height: 20px;
+  width: max-content;
+  float: right;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.contact__Container {
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 120px;
+  margin-bottom: 75px;
+  align-items: center;
+  align-content: center;
+  text-align: left;
+}
+
+.link {
+  color: #ababab;
+}
+
+/*=========================================================================================================================*/
+/*========== Projects CSS CODE ==========*/
+.head__container {
+  text-align: center;
+  height: 700px;
+  background: linear-gradient(0deg,#141414 20%,rgba(20,44,105,0) 60%),#202020!important;
+}
+
+.co {
+  padding-top: 275px;
+  padding-bottom: 275px;
+}
+
+.title {
+  font-size: 50px;
+  color: #FFFFFF;
+}
+
+.subtitle {
+  font-size: 20px;
+  font-weight: 100;
+  color: #ababab;
+}
+
+.project__container {
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto 0em;
+  border-top: 0.5px solid #808080;
+}
+
+.post__container {
+  padding: 80px;
+}
+
+.type {
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.label {
+  font-size: 26px;
+  color: #FFFFFF;
+}
+
+.date {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  color: #ababab;
+}
+
+.text-box {
+  font-size: 16px;
+  font-weight: lighter;
+  text-align: justify;
+  color: #FFFFFF;
+}
+
+.more {
+  color: #ababab;
+  font-weight: bolder;
+  font-size: 14px;
+  transition: 0.5s;
+}
+
+.more:hover {
+  color: #ffffff;
+}
+
+.more__co {
+  padding-top: 20px;
+}
+
+.image{
+  display: block;
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+  /*=========================================================================================================================*/
+  /* Screen Size */
+  @media (max-width: 1300px) { 
+
+    nav {
+      margin-left: 125px;
+      margin-right: 125px;
+    }
+
+    .about__Container {
+      margin-left: 125px;
+      margin-right: 125px;
+    }
+
+    .contact__Container {
+      margin-left: 125px;
+      margin-right: 125px;
+      margin-bottom: 75px;
+    }
+
+    .text__co {
+      margin-left: 125px;
+      margin-right: 125px;
+    }
+    
+    .skills__Container {
+      margin-left: 125px;
+      margin-right: 125px;
+    }
+
+    .Title {
+      font-size: 26px;
+    }
+    
+    .Subtitle {
+      font-size: 18px;
+    }
+    
+    .line {
+      font-size: 18px;
+    }
+    
+    .about__img {
+      width: 450px;
+    }
+
+  }  
+
+  @media (max-width: 1150px) { 
+
+    .about__Container {
+      margin-top: 70px;
+    }
+
+    .contact__Container {
+      margin-top: 70px;
+      margin-bottom: 70px;
+    }
+
+    .text__co {
+      margin-top: 70px;
+    }
+
+    .Title {
+      font-size: 24px;
+    }
+    
+    .Subtitle {
+      font-size: 16px;
+    }
+    
+    .line {
+      font-size: 16px;
+    }
+    
+    .about__img {
+      width: 400px;
+    }
+
+    .tags {
+      width: 70%;
+    }
+
+  }  
+
+  @media (max-width: 1000px) { 
+    
+    nav {
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+
+    .about__Container {
+      margin-left: 100px;
+      margin-right: 100px;
+      gap: 10px;
+      height: 400px;
+    }
+
+    .text__co {
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+
+    .skills__Container {
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+
+    .contact__Container {
+      margin-left: 100px;
+      margin-right: 100px;
+    }
+
+    .Title {
+      font-size: 20px;
+    }
+    
+    .Subtitle {
+      font-size: 15px;
+    }
+    
+    .line {
+      font-size: 15px;
+    }
+    
+    .about__img {
+      width: 325px;
+    }
+
+    .tags {
+      width: 85%;
+    }
+
+  }
+
+  @media (max-width: 800px) { 
+
+    .about__Container {
+      grid-template-columns: repeat(1,1fr);
+      height: 800px;
+      margin-top: 80px;
+    }
+    
+    .about__img {
+      width: 350px;
+      justify-self: center;
+      margin-top: 30px;
+    }
+
+    .skills__Container {
+      gap: 25px;
+      height: 120px;
+    }
+
+    .Title {
+      font-size: 26px;
+    }
+    
+    .Subtitle {
+      font-size: 18px;
+    }
+    
+    .line {
+      margin-top: 30px;
+      font-size: 18px;
+    }
+
+    .to-top {
+      width: 20px;
+      height: 20px;
+      font-size: 20px;
+      right: 15px;
+    }
+
+    .link1, .link2, .link3 {
+      left: 15px;
+    }
+
+    .vl {
+      left: 22px;
+    }
+
+    .button {
+      font-size: 12px;
+    }
+
+    .text {
+      color: #FFFFFF;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .tags {
+      width: 100%;
+    }
+
+    .tag1, .tag2, .tag3, .tag4, .tag5,
+    .tag6, .tag7, .tag8, .tag9, .tag10,
+    .tag11, .tag12 {
+      font-size: 12px;
+      height: 18px;
+      margin: 2.5px;
+    }
+
+    .title {
+      font-size: 40px;
+    }
+    
+    .subtitle {
+      font-size: 18px;
+    }
+
+  }  
+
+  @media (max-width: 650px) { 
+
+    .Title {
+      font-size: 24px;
+    }
+    
+    .Subtitle {
+      font-size: 16px;
+    }
+    
+    .line {
+      font-size: 16px;
+    }
+
+    .tag1, .tag2, .tag3, .tag4, .tag5,
+    .tag6, .tag7, .tag8, .tag9, .tag10,
+    .tag11, .tag12 {
+      font-size: 10px;
+      height: 14px;
+    }
+
+    .title {
+      font-size: 35px;
+    }
+    
+    .subtitle {
+      font-size: 15px;
+    }
+
+    .post__container {
+      padding: 60px;
+    }
+
+  }
+
+  @media (max-width: 600px) { 
+
+    nav {
+      margin-left: 60px;
+      margin-right: 60px;
+    }
+
+    .about__Container {
+      margin-left: 60px;
+      margin-right: 60px;
+      height: 700px;
+      margin-top: 55px;
+    }
+
+    .skills__Container {
+      height: 100px;
+      margin-left: 60px;
+      margin-right: 60px;
+    }
+
+    .text__co {
+      margin-left: 60px;
+      margin-right: 60px;
+      margin-top: 55px;
+    }
+
+    .contact__Container {
+      margin-left: 60px;
+      margin-right: 60px;
+      margin-top: 55px;
+      margin-bottom: 55px;
+    }
+
+    .Title {
+      font-size: 22px;
+    }
+    
+    .Subtitle {
+      font-size: 14px;
+    }
+    
+    .line {
+      font-size: 14px;
+    }
+
+    .about__img {
+      width: 300px;
+    }
+
+  }
+
+  @media (max-width: 550px) {
+    .to-top {
+      font-size: 14px;
+    }
+
+    .general__Container {
+      width: 550px;
+      align-content: center;
+      text-align: center;
+    }
+
+    .music__Container {
+      width: 550px;
+    }
+    .links__fot {
+      width: 550px;
+    }
+
+    .title {
+      font-size: 25px;
+    }
+    
+    .subtitle {
+      font-size: 14px;
+    }
+
+    .type {
+      font-size: 12px;
+    }
+    
+    .label {
+      font-size: 20px;
+    }
+    
+    .date {
+      font-size: 12px;
+    }
+    
+    .text-box {
+      font-size: 14px;
+    }
+    
+    .more {
+      font-size: 12px;
+    }
+    
+  }
+
+  @media (max-width: 500px) { 
+
+    .about__Container {
+      height: 650px;
+      margin-top: 40px;
+    }
+
+    .contact__Container {
+      margin-top: 40px;
+      margin-bottom: 40px;
+    }
+
+    .text__co {
+      margin-top: 40px;
+    }
+
+    .Title {
+      font-size: 18px;
+    }
+    
+    .Subtitle {
+      font-size: 12px;
+    }
+    
+    .line {
+      font-size: 12px;
+    }
+
+    .skills__Container {
+      height: 160px;
+    }
+
+    .about__img {
+      width: 250px;
+    }
+
+  }
+
+  @media (max-width: 400px) { 
+
+    .about__Container {
+      height: 560px;
+    }
+
+    .skills__Container {
+      height: 170px;
+    }
+
+    .Title {
+      font-size: 16px;
+    }
+    
+    .Subtitle {
+      font-size: 10px;
+    }
+    
+    .line {
+      font-size: 10px;
+    }
+
+    .copyright {
+      font-size: 10px;
+    }
+
+    .about__img {
+      width: 200px;
+    }
+
+    .nav__button {
+      font-size: 12px;
+    }
+  
+    .active__button {
+      font-size: 12px;
+    }
+
+    .tag1, .tag2, .tag3, .tag4, .tag5,
+    .tag6, .tag7, .tag8, .tag9, .tag10,
+    .tag11, .tag12 {
+      font-size: 8px;
+      height: 10px;
+    }
+
+    .title {
+      font-size: 22px;
+    }
+    
+    .subtitle {
+      font-size: 12px;
+    }
+
+    .type {
+      font-size: 10px;
+    }
+    
+    .label {
+      font-size: 18px;
+    }
+    
+    .date {
+      font-size: 10px;
+    }
+    
+    .text-box {
+      font-size: 12px;
+    }
+    
+    .more {
+      font-size: 10px;
+    }
+
+  }

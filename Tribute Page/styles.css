@@ -1,0 +1,46 @@
+body {
+  font-family: Arial;
+  background-color: #202020;
+  color: #fff
+}
+
+#title {
+  text-align: center;
+  margin: 50px auto;
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+#img-caption {
+  text-align: center;
+  font-size: 15px;
+  padding-top: 15px;
+}
+
+#text-div {
+  max-width: 800px;
+  margin: 0 auto 0em;
+}
+
+#tribute-info {
+  text-align: center;
+  font-size: 24px;
+}
+
+li {
+   margin-bottom: 30px;
+}
+
+#fotter-text {
+  text-align: center;
+  font-size: 16px;
+}
+
+#tribute-link {
+  color: #999999;
+}
