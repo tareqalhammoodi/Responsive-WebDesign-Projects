@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" /> 
+  </head>
+  <body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">We really appreciate taking your time to help us improve our work</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name</label>
+        <input id="name" type="text" placeholder="Enter your name" required/>
+        <label id="email-label">E-mail</label>
+        <input id="email" type="email" placeholder="Enter your E-mail" required/>
+        <label id="number-label">Age</label>
+        <input id="number" type="number" placeholder="Enter your age" min="13" max="120"/>
+      </fieldset>
+
+      <fieldset>
+        <label id="role-label">Which option best describes your current role?</label>
+        <select id="dropdown">
+          <option value="">Select current role</option>
+          <option value="1">Student</option>
+          <option value="2">Full time job</option>
+          <option value="3">Part time job</option>
+          <option value="4">Other</option>
+        </select>  
+      </fieldset>
+
+      <fieldset>
+        <label id="recommendation-label">Would you recommend us to a friend?</label>
+        <label id="l-option1"><input id="option1" type="radio" name="recommendation" value="Definitely" /> Definitely</label>
+        <label id="l-option2"><input id="option2" type="radio" name="recommendation" value="Maybe" /> Maybe</label>
+        <label id="l-option3"><input id="option3" type="radio" name="recommendation" value="Notsure" /> Not sure</label>
+      </fieldset>
+
+      <fieldset>
+        <label id="fields-label">Which field you're interested in?</label>
+        <label id="l-checkbox1"><input id="checkbox1" type="checkbox" value="Front-endDevelopment" />Front-end Development</label>
+        <label id="l-checkbox2"><input id="checkbox2" type="checkbox" value="Back-endDevelopment" />Back-end Development</label>
+        <label id="l-checkbox3"><input id="checkbox3" type="checkbox" value="MobileAppDevelopment" />Mobile App Development</label>
+        <label id="l-checkbox4"><input id="checkbox4" type="checkbox" value="GamesDevelopment" />Games Development</label>
+      </fieldset>  
+
+      <fieldset>
+        <label id="comments-label">Any comments or suggestions?</label>
+        <textarea id="comments" rows="5" cols="30" placeholder="Enter your comments here..."></textarea>
+      </fieldset>
+      
+      <input id="submit" type="submit" value="Submit" />
+     </form>
+  </body>
+</html>
